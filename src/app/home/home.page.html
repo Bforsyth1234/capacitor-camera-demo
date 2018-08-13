@@ -4,7 +4,8 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+  <ion-button ion-button size="medium" shape="round" color="primary" fill="outline" (click)="takePicture()">Take Picture</ion-button>
+  <img *ngIf="image" [src]="image" />
 </ion-content>
